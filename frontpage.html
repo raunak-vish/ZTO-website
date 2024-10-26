@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Zonal Talent Olympiad - ZTO</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+            <img src="./assets/zto-logo.png" alt="ZTO Logo" class="navbar-brand">
+            <button class="navbar-toggler" id="toggle-button" type="button" data-bs-toggle="collapse" data-bs-target="#nav-items" aria-controls="nav-items" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-items">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#dashboard" class="nav-link">Dashboard</a></li>
+                    <li class="nav-item"><a href="#resources" class="nav-link">Resources</a></li>
+                    <li class="nav-item"><a href="#success" class="nav-link">Success Stories</a></li>
+                    <li class="nav-item"><a href="#feedback" class="nav-link">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="greetmsg">
+        <h4 id="typewriter-text1">Hey there, champ! 🌟 Welcome to the Zonal Talent Olympiad (ZTO)</h4>
+        <!-- <h4 id="typewriter-text2">Welcome to the Zonal Talent Olympiad (ZTO)!</h4> -->
+    </section>
+    <section id="home" class="section">
+        <div class="glass">
+            <h1>Welcome to the Zonal Talent Olympiad!</h1>
+            <p>Enhancing Academic Excellence through Competition.</p>
+            <a href="login.html" <button class="cta-button">Get Started</button></a>
+        </div>
+    </section>
+
+    <section id="dashboard" class="section">
+        <div class="glass">
+            <h1>Dashboard</h1>
+            <div class="dashboard-card">
+                <h2>Upcoming Tests</h2>
+                <p>Check the schedule for upcoming tests and events.</p>
+                <button class="cta-button">View Schedule</button>
+            </div>
+            <div class="dashboard-card">
+                <h2>Registration Status</h2>
+                <p>View your current registration status for tests.</p>
+                <button class="cta-button">Check Status</button>
+            </div>
+            <div class="dashboard-card">
+                <h2>Leaderboard</h2>
+                <p>See how you rank among other participants.</p>
+                <button class="cta-button">View Leaderboard</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="section">
+        <div class="glass">
+            <h1>Resources</h1>
+            <p>Access study materials, practice tests, and educational resources to help you excel.</p>
+            <div class="dashboard-card">
+                <h2>Study Materials</h2>
+                <button class="cta-button">Download Resources</button>
+            </div>
+            <div class="dashboard-card">
+                <h2>Practice Tests</h2>
+                <button class="cta-button">Take Practice Tests</button>
+            </div>
+            <div class="dashboard-card">
+                <h2>Webinars</h2>
+                <button class="cta-button">Join Webinars</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="success" class="section">
+        <div class="glass">
+            <h1>Success Stories</h1>
+            <div class="dashboard-card">
+                <h2>Virat kohli</h2>
+                <p>"I scored in the top 10% of the ZTO, which helped me earn a scholarship for my college education!"
+                </p>
+            </div>
+            <div class="dashboard-card">
+                <h2>Rohit Sharma</h2>
+                <p>"Thanks to the resources and guidance from ZTO, I was able to achieve my dream of getting into my
+                    preferred college!"</p>
+            </div>
+            <div class="dashboard-card">
+                <h2>MS dhoni</h2>
+                <p>"The experience of competing in the ZTO was life-changing. I learned so much and made great friends
+                    along the way!"</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback" class="section">
+        <div class="glass">
+            <h1>Feedback and Help</h1>
+            <p>Your feedback is valuable to us! Let us know how we can improve.</p>
+            <form action="#" method="post">
+                <textarea name="feedback" rows="4" placeholder="Share your feedback or ask for help..."></textarea>
+                <br>
+                <button type="submit" class="cta-button">Submit Feedback</button>
+            </form>
+            <p>If you need immediate assistance, please contact us at <a href="mailto:support@zto.com">support@zto.com</a>.</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="glass">
+            <h1>About Us</h1>
+            <p>The Zonal Test Olympiad is an initiative to encourage academic excellence among students by providing a
+                platform for competition and recognition.</p>
+        </div>
+    </section>
+
+    <!-- Add Bootstrap JS at the end of the body -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const toggleButton = document.getElementById('toggle-button');
+        const navItems = document.getElementById('nav-items');
+
+        toggleButton.addEventListener('click', () => {
+            navItems.classList.toggle('active');
+            toggleButton.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

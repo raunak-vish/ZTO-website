@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
+
+.montserrat-font {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'montserrat-font', sans-serif;
+    background-color: #f4f9fd;
+    color: #333;
+    background-image: url('background-pattern.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="checkbox"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="checkbox"]:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #003d66;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.navbar {
+    background: rgba(0, 153, 153, 0.8);
+    backdrop-filter: blur(5px);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8); /* Stronger border property */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px; /* Add space between navbar items */
+}
+
+/* Navbar Styles */
+.navbar {
+    background: rgba(0, 153, 153, 0.8);
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.navbar-brand {
+    height: 50px;
+    margin-right: auto;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+
+.navbar-collapse {
+    flex-grow: 0;
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: scale(1);
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 1em;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #dff3ff;
+    transform: scale(1.1);
+}
+
+/* Responsive Navbar */
+@media (max-width: 992px) {
+    .navbar-toggler {
+        display: inline-block;
+    }
+    
+    .collapse.navbar-collapse {
+        display: none;
+    }
+
+    .navbar-collapse.show {
+        display: flex !important;
+        flex-direction: column;
+        background: rgba(0, 153, 153, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-link {
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+
+#greetmsg {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 100px; 
+    padding-bottom: 5px;
+    background-image: linear-gradient(135deg, #dff3ff 0%, #f4f9fd 100%);
+}
+
+.glass a {
+    text-decoration: none;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
+}
+
+#typewriter-text1 {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-right: 3px solid black;
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    animation: typewriter 2.5s steps(20, end), blink-caret 0.75s step-end infinite;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 35px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 11;
+    transition: transform 0.3s ease;
+}
+
+.toggle-button div {
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.toggle-button.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.toggle-button.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.toggle-button.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-items {
+    display: flex;
+    transition: max-height 0.3s ease-in-out;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home {
+    padding-top: 80px;
+    background-image: linear-gradient(135deg, #dff3ff 0%, #f4f9fd 100%);
+    text-align: center;
+    position: relative;
+}
+
+#home h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+#dashboard {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.dashboard-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+#resources {
+    background-color: #f4f9fd;
+}
+
+#resources h1 {
+    color: #003d66;
+}
+
+#success {
+    background-color: #ffffff;
+}
+
+#feedback {
+    background-color: #f4f9fd;
+}
+
+#about {
+    background-color: #f4f9fd;
+}
+
+/* New Animation Styles */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Apply animations to text elements */
+h1, p {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Apply animations to images */
+img {
+    animation: zoomIn 0.8s ease forwards;
+}
+
+/* Advanced Animation Styles for Scrolling Text */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0) scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(100%) scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%) scale(0.5);
+        opacity: 0;
+    }
+}
+
+.scroll-text {
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent text wrapping */
+    display: inline-block; /* Allow animation */
+    animation: slideIn 1s forwards, slideOut 1s forwards 3s; /* Adjust timing as needed */
+}
+
+/* Entering Animation Styles */
+@keyframes enterFromBottom {
+    0% {
+        transform: translateY(100%) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-10%) scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes enterFromLeft {
+    0% {
+        transform: translateX(-100%) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(10%) scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.entering-text {
+    display: inline-block; /* Allow animation */
+    animation: enterFromBottom 1s forwards; /* Change to enterFromLeft for left animation */
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-left {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav-left .nav-item {
+        margin: 5px 0;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(0, 82, 153, 0.8);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 9;
+    }
+
+    .nav-items.active {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+    }
+
+    .dashboard-card {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    textarea {
+        width: 90%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+}

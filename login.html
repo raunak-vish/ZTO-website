@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <form name="RegForm" onsubmit="return validateForm()">
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" 
+                placeholder="Enter your full name" />
+            <span id="name-error" class="error-message"></span>
+        </p>
+                 <p>
+            <label for="Father name">Father Name:</label>
+            <input type="text" id="name" name="father Name" 
+                placeholder="Enter your father name" />
+            <span id="name-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="Address" 
+                placeholder="Enter your address" />
+            <span id="address-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="email">E-mail Address:</label>
+            <input type="text" id="email" name="EMail" 
+                placeholder="Enter your email" />
+            <span id="email-error" class="error-message"></span>
+        </p>
+
+        <p>
+            <label for="subject">Select Your Class:</label>
+            <select id="subject" name="Subject">
+                <option value="">
+                    Select Class
+                </option>
+                <option value="8th">
+                    8th
+                </option>
+                <option value="9th">
+                    9th
+                </option>
+                <option value="10th">
+                    10th
+                </option>
+            </select>
+            <span id="subject-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="comment">Institute Name:</label>
+            <textarea id="comment" name="Comment"></textarea>
+        </p>
+        <p>
+            <input type="checkbox" id="agree" name="Agree" />
+            <label for="agree">I agree to the above
+                information</label>
+            <span id="agree-error" class="error-message"></span>
+        </p>
+        <p>
+            <input type="submit" value="Submit" name="Submit" />
+            <input type="reset" value="Reset" name="Reset" />
+        </p>
+        
+    </form>
+    
+    <script src="./zto.js"></script>
+</body>
+
+</html>
