@@ -117,7 +117,8 @@ p {
 .navbar {
     background: rgba(0, 153, 153, 0.8);
     backdrop-filter: blur(5px);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.8); /* Stronger border property */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+    /* Stronger border property */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,7 +126,8 @@ p {
 
 .navbar-nav {
     display: flex;
-    gap: 20px; /* Add space between navbar items */
+    gap: 20px;
+    /* Add space between navbar items */
 }
 
 /* Navbar Styles */
@@ -189,7 +191,7 @@ p {
     .navbar-toggler {
         display: inline-block;
     }
-    
+
     .collapse.navbar-collapse {
         display: none;
     }
@@ -221,7 +223,7 @@ p {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding-top: 100px; 
+    padding-top: 100px;
     padding-bottom: 5px;
     background-image: linear-gradient(135deg, #dff3ff 0%, #f4f9fd 100%);
 }
@@ -241,6 +243,7 @@ p {
 }
 
 @keyframes blink-caret {
+
     from,
     to {
         border-color: transparent;
@@ -381,6 +384,7 @@ p {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -392,6 +396,7 @@ p {
         transform: scale(0.5);
         opacity: 0;
     }
+
     to {
         transform: scale(1);
         opacity: 1;
@@ -399,7 +404,8 @@ p {
 }
 
 /* Apply animations to text elements */
-h1, p {
+h1,
+p {
     animation: fadeInUp 0.8s ease forwards;
 }
 
@@ -414,10 +420,12 @@ img {
         transform: translateX(-100%) scale(0.5);
         opacity: 0;
     }
+
     50% {
         transform: translateX(0) scale(1.1);
         opacity: 1;
     }
+
     100% {
         transform: translateX(0) scale(1);
         opacity: 1;
@@ -429,10 +437,12 @@ img {
         transform: translateX(0) scale(1);
         opacity: 1;
     }
+
     50% {
         transform: translateX(100%) scale(1.1);
         opacity: 1;
     }
+
     100% {
         transform: translateX(100%) scale(0.5);
         opacity: 0;
@@ -440,10 +450,14 @@ img {
 }
 
 .scroll-text {
-    overflow: hidden; /* Hide overflow */
-    white-space: nowrap; /* Prevent text wrapping */
-    display: inline-block; /* Allow animation */
-    animation: slideIn 1s forwards, slideOut 1s forwards 3s; /* Adjust timing as needed */
+    overflow: hidden;
+    /* Hide overflow */
+    white-space: nowrap;
+    /* Prevent text wrapping */
+    display: inline-block;
+    /* Allow animation */
+    animation: slideIn 1s forwards, slideOut 1s forwards 3s;
+    /* Adjust timing as needed */
 }
 
 /* Entering Animation Styles */
@@ -452,10 +466,12 @@ img {
         transform: translateY(100%) scale(0.5);
         opacity: 0;
     }
+
     50% {
         transform: translateY(-10%) scale(1.1);
         opacity: 1;
     }
+
     100% {
         transform: translateY(0) scale(1);
         opacity: 1;
@@ -467,10 +483,12 @@ img {
         transform: translateX(-100%) scale(0.5);
         opacity: 0;
     }
+
     50% {
         transform: translateX(10%) scale(1.1);
         opacity: 1;
     }
+
     100% {
         transform: translateX(0) scale(1);
         opacity: 1;
@@ -478,45 +496,74 @@ img {
 }
 
 .entering-text {
-    display: inline-block; /* Allow animation */
-    animation: enterFromBottom 1s forwards; /* Change to enterFromLeft for left animation */
+    display: inline-block;
+    /* Allow animation */
+    animation: enterFromBottom 1s forwards;
+    /* Change to enterFromLeft for left animation */
 }
 
+/* Media Queries for Tablets and Mobile Devices */
 @media screen and (max-width: 768px) {
+
+    /* Adjust navbar for mobile */
+    section#greetmsg {
+        display: none;
+    }
+
+    img.navbar-brand {
+        margin-left: -50px;
+    }
+
+    /* Adjust navbar for mobile */
     .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .nav-left {
         flex-direction: column;
+        /* Stack items vertically */
         align-items: flex-start;
-        width: 100%;
+        /* Align items to the left */
+        padding: 10px;
+        /* Add some padding */
     }
 
-    .nav-left .nav-item {
-        margin: 5px 0;
-    }
-
-    .toggle-button {
-        display: flex;
+    .navbar-brand {
+        margin-bottom: 10px;
+        /* Space between logo and navbar items */
     }
 
     .nav-items {
         display: none;
+        /* Hide by default */
         flex-direction: column;
+        /* Stack items vertically */
         width: 100%;
+        /* Full width */
         background: rgba(0, 82, 153, 0.8);
+        /* Background color */
         position: absolute;
+        /* Positioning */
         top: 60px;
+        /* Adjust based on navbar height */
         left: 0;
+        /* Align to the left */
         z-index: 9;
+        /* Ensure it appears above other content */
     }
 
     .nav-items.active {
         display: flex;
+        /* Show when active */
     }
 
+    /* Adjust navbar items */
+    .nav-link {
+        text-align: left;
+        /* Align text to the left */
+        padding: 10px 15px;
+        /* Adjust padding */
+        width: 100%;
+        /* Full width for touch targets */
+    }
+
+    /* Adjust heading and paragraph sizes */
     h1 {
         font-size: 2.2em;
     }
@@ -525,20 +572,61 @@ img {
         font-size: 1em;
     }
 
+    /* Adjust call-to-action button size */
     .cta-button {
         font-size: 1em;
     }
 
+    /* Adjust dashboard card padding and margin */
     .dashboard-card {
         margin: 10px 0;
         padding: 15px;
     }
 
+    /* Adjust textarea width and padding */
     textarea {
         width: 90%;
         padding: 10px;
         border-radius: 5px;
         border: 1px solid #ccc;
         margin-bottom: 10px;
+    }
+
+    .section {
+        padding: 80px 20px !important;
+    }
+
+    /* Additional Media Query for Mobile Devices */
+    @media screen and (max-width: 480px) {
+
+        /* Further adjustments for smaller screens */
+        section#greetmsg {
+            display: none;
+        }
+
+        img.navbar-brand {
+            margin-left: -50px;
+        }
+
+        h1 {
+            font-size: 1.8em !important;
+        }
+
+        p {
+            font-size: 0.9em !important;
+        }
+
+        .cta-button {
+            padding: 8px 16px;
+            font-size: 0.9em !important;
+        }
+
+        .glass {
+            padding: 15px !important;
+        }
+
+        .section {
+            padding: 80px 20px !important;
+        }
     }
 }
